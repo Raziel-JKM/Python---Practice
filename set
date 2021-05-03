@@ -1,0 +1,51 @@
+#set 중복이 안되고 순서가 없다
+my_set = {1,2,3,3,3}
+print(my_set)
+
+java = {유재석","김태호","양세형")
+python = set(["유재석", "박명수"])
+
+# 교집합(java 와 python)을 모두 할 수 있는사람
+print(java & python)
+print(java.intersection(python))
+
+# 합집합(자바도 할 수 있고 파이썬도 할 수있는 개발자)
+print(java|python)
+print(java.union(python))
+
+#차집합(java 할 수 있지만 파이선은 할 줄 모르는 개발자)
+print(java.differece(python))
+
+#파이썬을 할 줄 아는 사람이 늘어났다
+python.add("김태호")
+print(python)
+#출력값 박명수 김태호 유재석
+
+#김태호가 자바를 까먹었다
+java.remove("김태호")
+print(java)
+-------------------------------
+#자료구조의 변경
+#커피숍
+
+menu = {"커피", "우유", "주스"}
+print(menu, type(menu))
+
+#메뉴를 리스트로 감싸다
+menu = list(menu)
+print(menu, typr(menu))
+
+menu = tuple(menu)
+print(menu, type(menu))
+
+menu = set(menu)
+print(menu,type(menu))
+
+#결과값
+
+#{'우유',커피,'주스'}<class 'set'>
+#['우유',커피,'주스']<class 'list'>
+#('우유',커피,'주스')<class 'tuple'>
+#{'우유',커피,'주스'}<class 'set'> - 다시 셋으로 감쌈
+
+
