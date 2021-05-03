@@ -1,0 +1,53 @@
+cabnet = {3:"유재석", 100:"김태호"}
+#2개의 값이 있고, 3은 유재석이 , 100번키 김태호가 쓰고 있음
+print(cabinet[3])
+#유재석 출력
+
+print(cabnet[100])
+#김태호 출력
+#print(cabinet.get(3))도 동일한 출력값
+
+
+#주의
+print("hi")
+#오류 출력됨
+
+print(caninet.get(5))
+#없는값 그러나 진행은됨 위에는 종료가됨
+
+
+#확인하는법
+print(3 in cabnet) #True
+print(5 in cabnet) #False
+
+cabinet = {"A-3":"유재석, "B-100:"김태호"}
+print(cabinet["A-3"])
+print(cabinet[B-100])
+
+#새 손님
+print(cabinet)
+cabinet["A-3"] = "김종국"
+cabinet["C-20"] = "조세호"
+#값이 업데이트가 된다
+print(cabinet)
+#김종국 김태호 조세호<-값이 추가가된다
+
+# 간 손님
+
+del(cabnet["A-3"]
+print(cabinet)
+
+#key 들만 출력
+
+print(cabinet.key())
+
+#value 들만 출력
+
+print(cabinet.values())
+
+#key, value 쌍으로 출력
+print(cabinet.items())
+
+#목욕탕 폐점 , 캐비넷 모두 지움
+cabinet.clear
+print(cabnet)
